@@ -1,0 +1,11 @@
+"use strict";
+// let name: string = 'Brian';
+// console.log('hi');
+// const date: Date = new Date();
+// date.getFullYear();
+let firstName = 'Brian';
+const d = new Date();
+const year = d.getFullYear();
+let age = year - 1995;
+console.log('hi\n');
+console.log(`My name is ${firstName} and I am ${age} years old!`);

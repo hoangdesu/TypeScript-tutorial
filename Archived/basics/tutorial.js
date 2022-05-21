@@ -1,0 +1,13 @@
+// console.log('Hi TypeScript');
+// const firstName = 'Brian';
+// console.log(firstName);
+var myName = 'Hoang';
+var birthYear = 1995;
+var age = 2021 - birthYear;
+myName = 'Brian';
+// myName = 5;
+console.log(myName);
+console.log("I am " + age + " years old.");
+var circleArea = function (radius) { return radius * radius * Math.PI; };
+console.log(circleArea(5));
+// console.log(circleArea('hi'));
