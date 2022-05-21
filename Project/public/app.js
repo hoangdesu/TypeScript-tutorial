@@ -21,7 +21,8 @@ const newList = new ListTemplate(ul);
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log(type.value, toFrom.value, details.value, amount.valueAsNumber);
-    const invoice = new Invoice(toFrom.value, details.value, amount.valueAsNumber);
+    const params = [toFrom.value, details.value, amount.valueAsNumber]; // tuple
+    const invoice = new Invoice(...params);
     newList.render(type.value, invoice, 'end');
     console.log(invoice);
 });

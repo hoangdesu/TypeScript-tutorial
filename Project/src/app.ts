@@ -35,7 +35,9 @@ form.addEventListener('submit', (e: Event) => {
         amount.valueAsNumber
     );
 
-    const invoice: HasFormatter = new Invoice(toFrom.value, details.value, amount.valueAsNumber);
+    const params: [string, string, number] = [toFrom.value, details.value, amount.valueAsNumber]; // tuple
+
+    const invoice: HasFormatter = new Invoice(...params);
     
     newList.render(type.value, invoice, 'end');
     console.log(invoice);
